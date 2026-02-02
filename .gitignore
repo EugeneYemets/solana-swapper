@@ -1,0 +1,14 @@
+# Rust build artifacts
+target/
+**/target/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets (часто в solana-проєктах)
+.env
+*.pem
+*.key
+*id.json
