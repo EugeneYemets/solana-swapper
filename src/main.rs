@@ -65,7 +65,7 @@ struct SwapResponse {
     #[serde(default)]
     prioritization_fee_lamports: Option<u64>,
 }
-
+// задає питання та читає 
 fn read_line(prompt: &str) -> Result<String> {
     print!("{prompt}");
     io::stdout().flush().ok();
@@ -334,3 +334,6 @@ async fn main() -> Result<()> {
 
     Ok(())
 }
+
+
+
