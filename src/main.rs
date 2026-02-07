@@ -10,9 +10,10 @@ use solana_sdk::{
     instruction::Instruction,
     pubkey::Pubkey,
     signature::{read_keypair_file, Keypair, Signer},
-    system_program,
     transaction::VersionedTransaction,
 };
+#[allow(deprecated)]
+use solana_sdk::system_program;
 use std::{
     fs,
     io::{self, Write},
